@@ -50,9 +50,9 @@ export const profiles = [
   ];
   
   export const tabs = [
-    { label: "All", count: 200 },
-    { label: "Recent", count: 50 },
-    { label: "Nearby", count: 150 },
+    { title: 'Hot Users', label: "All Users" },
+    { title: "Hot Match Requests",label: "Match requests" },
+    { title: "Hot Matched Users",label: "Matched Users" },
   ];
   
   export const navigationItems = [
