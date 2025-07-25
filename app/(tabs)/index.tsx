@@ -1,4 +1,4 @@
-import { navigationItems, profiles, tabs } from "@/constants/data";
+import { profiles, tabs } from "@/constants/data";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import React, { useState } from "react";
@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#f9fafb",
     paddingTop: Number(StatusBar.currentHeight) + 16,
-    paddingHorizontal: 24,
+    paddingHorizontal: 16,
   },
   tabsContainer: {
     flexDirection: "row",
@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   activeTabButton: {
-    backgroundColor: "#ae2039",
+    backgroundColor: "#9E142F",
     borderWidth: 1,
     borderColor: "#e5e7eb",
   },
@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 18,
     fontWeight: "500",
-    color: "#ae2039",
+    color: "#9E142F",
   },
   profileGrid: {
     paddingBottom: 120,
@@ -281,3 +281,8 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
 });
+
+// primary: "#9E142F", 
+//         red: {
+//           light: "#fa6c79"
+//         },

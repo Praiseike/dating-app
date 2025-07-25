@@ -1,18 +1,18 @@
+import { profiles } from "@/constants/data";
+import { Ionicons } from "@expo/vector-icons";
+import { useLocalSearchParams } from "expo-router";
 import React, { useState } from "react";
 import {
-  View,
-  Text,
-  Image,
-  ScrollView,
-  TouchableOpacity,
-  StyleSheet,
-  SafeAreaView,
-  StatusBar,
   Dimensions,
+  Image,
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { profiles } from "@/constants/data";
-import { useLocalSearchParams } from "expo-router";
 
 const { width } = Dimensions.get("window");
 
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#ffffff",
-    paddingHorizontal: 24,
+    paddingHorizontal: 16,
     paddingTop: StatusBar.currentHeight,
   },
   scrollView: {
@@ -190,6 +190,8 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     overflow: "hidden",
     position: "relative",
+    display : "flex",
+    justifyContent: "center",
   },
   profileImage: {
     width: "100%",
